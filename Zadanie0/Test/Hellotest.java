@@ -13,7 +13,7 @@ public class Hellotest {
         //Act
         String greeting = hejka.getGreeting();
         //Assert
-        assertEquals("HelloWorld!!ggone",greeting);
+        assertEquals("HelloWorld!!one",greeting);
         
     }
 }

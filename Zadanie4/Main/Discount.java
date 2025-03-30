@@ -3,27 +3,32 @@ public class Discount{
     public static void main (String args[])
         {
         }
-        public double calculateDiscount(double price){
-            double rabat;
-            if (price<0){
-                System.out.println("Cena nie moze byc mniejsza od zero");
+
+
+        public double calculateDiscount(double wartosc){
+            double rabat=0;
+            double dokladnosc=100.0; // 2 miejsca po przecinku
+
+            if (wartosc<0){
+                throw new IllegalArgumentException("Cena nie moze byc mniejsza od zero");
             }
-            else if (price<=5000){
-                return rabat=0;
+            else if (wartosc<=5000){
+                rabat=0;
             }
-            else if(price<=15000){
-                return rabat=30;
+            else if(wartosc<=15000){
+                rabat=30;
             }
-            else if(price<=15000){
-                return rabat=40;
-            }
-            else if(price>50000){
-                return rabat=80;
+            else if(wartosc<=50000){
+                rabat=40;
             }
             else{
-                System.out.println("Niepoprawne dane");
+                rabat=80;
             }
-            return rabat=0;
+            double suma = wartosc - (wartosc * (rabat / dokladnosc));
+            double sumaDec = Math.round(suma * dokladnosc) / dokladnosc;
+            return sumaDec;
         }
+
+
 
     }

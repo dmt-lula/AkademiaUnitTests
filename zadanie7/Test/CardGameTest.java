@@ -22,5 +22,5 @@ class CardGameTest{
       Arguments.of(new String[]{"8","7","6"},new String[]{"K","J","A"},"Mati wygrywa 3 do 0")
     );
   }
-
+//eee
 }

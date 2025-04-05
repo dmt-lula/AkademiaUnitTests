@@ -21,8 +21,8 @@ public class Exam{
       }
 
       // Obliczamy procentowy wynik
-      double percentage = (totalPoints + 40) / 60.0 * 100;
-      // double percentage = (totalPoints / 30.0) * 100;
+    //   double percentage = (totalPoints + 40) / 60.0 * 100;
+      double percentage = (totalPoints / 30.0) * 100;
 
       // Zwracamy ocenę na podstawie procentów
       if (percentage < 51) {
